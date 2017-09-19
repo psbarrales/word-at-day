@@ -1,0 +1,3 @@
+urls:
+  trips:
+    homePath: http://localhost:8100/

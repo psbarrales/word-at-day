@@ -1,0 +1,9 @@
+urls:
+  trips:
+    homePath: http://localhost:8100/
+
+
+logging:
+  level: info
+  colorize: true
+  timestamp: true
