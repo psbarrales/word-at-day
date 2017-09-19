@@ -1,0 +1,15 @@
+<ion-header>
+	<header-main [title]="title"></header-main>
+</ion-header>
+<ion-content>
+	<ion-toolbar>
+		<ion-searchbar placeholder="Buscar palabra"></ion-searchbar>
+	</ion-toolbar>
+	<ion-list padding>
+		<ion-item-divider>A</ion-item-divider>
+		<ion-item (click)="showWord('Abrumado')">
+			<b>Abrumado</b>
+			<ion-icon item-end name="arrow-dropright"></ion-icon>
+		</ion-item>
+	</ion-list>
+</ion-content>

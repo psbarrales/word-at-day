@@ -1,0 +1,34 @@
+<ion-header>
+	<header-main [title]="title" [hideColaborate]="true" [hideSettings]="true"></header-main>
+</ion-header>
+<ion-content padding>
+	<ion-list>
+		<ion-item-divider>
+			Colabora enviando una nueva palabra
+		</ion-item-divider>
+		<ion-item>
+			<ion-input type="email" value="" placeholder="Correo electrónico" required></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-input type="text" value="" placeholder="Palabra" required></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-textarea placeholder="Significado"></ion-textarea>
+		</ion-item>
+		<ion-item>
+			<ion-textarea placeholder="Ejemplos"></ion-textarea>
+		</ion-item>
+		<ion-item text-center>
+			<button ion-button color="primary" default>Enviar</button>
+		</ion-item>
+	</ion-list>
+	<ion-list>
+		<ion-item-divider>
+			Puedes enviar un pull request
+		</ion-item-divider>
+		<ion-item>
+			<ion-icon name="logo-github" item-start></ion-icon>
+			<a href="https://www.github.com">https://www.github.com</a>
+		</ion-item>
+	</ion-list>
+</ion-content>

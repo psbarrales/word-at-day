@@ -1,0 +1,44 @@
+<ion-header>
+	<header-main [title]="title"
+	             [hideColaborate]="true"
+	             [hideSettings]="true"></header-main>
+</ion-header>
+<ion-content padding>
+	<ion-list>
+		<ion-item-group>
+			<ion-item-divider>
+				Notificaciones
+			</ion-item-divider>
+			<ion-item>
+				<ion-label> Activar</ion-label>
+				<ion-toggle checked="false"></ion-toggle>
+			</ion-item>
+			<ion-item>
+				<ion-label>Frecuencia</ion-label>
+				<ion-select [(ngModel)]="frequency"
+				            [okText]="'Aceptar'"
+				            [cancelText]="'Cancelar'">
+					<ion-option value="12">Cada 12 horas</ion-option>
+					<ion-option value="24">Cada 24 horas</ion-option>
+				</ion-select>
+			</ion-item>
+		</ion-item-group>
+	</ion-list>
+	<ion-list>
+		<ion-item-group>
+			<ion-item-divider>
+				Diccionario
+			</ion-item-divider>
+			<ion-item>
+				<ion-label>Nivel de palabras</ion-label>
+				<ion-select [(ngModel)]="level"
+				            [okText]="'Aceptar'"
+				            [cancelText]="'Cancelar'">
+					<ion-option value="easy">Fácil</ion-option>
+					<ion-option value="medium">Medio</ion-option>
+					<ion-option value="hard">Difícil</ion-option>
+				</ion-select>
+			</ion-item>
+		</ion-item-group>
+	</ion-list>
+</ion-content>

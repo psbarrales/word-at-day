@@ -1,0 +1,16 @@
+page-home {
+	.word-at-day {
+		.word {
+			font-weight: bold;
+			font-size: 2rem;
+		}
+		ol {
+			margin-top: 0.5rem;
+			padding-left: 1.75rem;
+		}
+	}
+	.stats {
+		border-top: 1px solid transparentize(#222222, 0.75);
+		padding-top: 1.75rem;
+	}
+}

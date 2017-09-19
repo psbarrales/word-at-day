@@ -1,0 +1,13 @@
+<ion-navbar color="primary">
+	<ion-title>
+		{{ title }}
+	</ion-title>
+	<ion-buttons end>
+		<button ion-button icon-only (click)="goCollaborate()" *ngIf="!hideColaborate">
+			<ion-icon name="text"></ion-icon>
+		</button>
+		<button ion-button icon-only (click)="goSettings()" *ngIf="!hideSettings">
+			<ion-icon name="cog"></ion-icon>
+		</button>
+	</ion-buttons>
+</ion-navbar>

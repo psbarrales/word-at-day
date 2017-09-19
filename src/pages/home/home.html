@@ -1,0 +1,63 @@
+<ion-header>
+	<header-main [title]="title"></header-main>
+</ion-header>
+<ion-content padding>
+	<div class="word-at-day">
+		<ion-list>
+			<ion-item-group>
+				<ion-item-divider>
+					Palabra del día
+				</ion-item-divider>
+				<ion-item>
+					<span class="word">Abuhado, da</span>
+					<div text-end>Dificultad: <b>Media</b></div>
+					<ol>
+						<li><i>(Adj)</i> Hinchado o abotagado.</li>
+						<li><i>(Adj)</i> Pálido, de mal color.</li>
+					</ol>
+				</ion-item>
+			</ion-item-group>
+		</ion-list>
+		<ion-list>
+			<ion-item-group>
+				<ion-item-divider>
+					Ejemplos
+				</ion-item-divider>
+				<ion-item>
+					Su tez parece <b>abuhada</b>
+				</ion-item>
+			</ion-item-group>
+		</ion-list>
+	</div>
+	<div class="stats">
+		<ion-list>
+			<ion-item-divider>
+				Estadísticas
+			</ion-item-divider>
+			<ion-item>
+				Palabras nuevas
+				<span item-end>20</span>
+			</ion-item>
+			<ion-item (click)="goWords()">
+				Palabras totales
+				<span item-end>1250</span>
+				<ion-icon item-end name="arrow-dropright"></ion-icon>
+			</ion-item>
+		</ion-list>
+	</div>
+	<div class="buy-me-coffee">
+		<ion-list>
+			<ion-item-divider>
+				Donaciones
+			</ion-item-divider>
+			<ion-item class="item-block" (click)="goBeer()">
+				Comprame una cerveza
+				<ion-icon item-end name="beer"></ion-icon>
+			</ion-item>
+			<ion-item class="item-block" (click)="goNoAds()">
+				Quitar publicidad
+				<ion-icon item-end name="cart"></ion-icon>
+			</ion-item>
+		</ion-list>
+	</div>
+</ion-content>
